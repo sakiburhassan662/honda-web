@@ -1,12 +1,5 @@
-/*-------------------
- Media Queries 
- ------------------*/
-/*------------------
- Mobile Devices 
--------------------*/
 @media only screen and (max-width:688px) {
-    img .bike{
-        width: 321px;
-        height: 260px;
+    img.bike {
+        width: 300px;
     }
-}
+    }

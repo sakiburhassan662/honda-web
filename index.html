@@ -10,6 +10,7 @@
     <!-- bootstarp stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- pure css  -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -19,7 +20,6 @@
             <div class="row bg-gradient d-flex align-items-center p-5 bg-secondary"> 
                 <div class="col">
                     <p><span style="color: #E0E0E0;">Computer-controlled digital transistorized with electronic advance</span></p>
-                  <p></p>
                   <h1 class="fw-bold text-uppercase"><span style="color: #ffffff;">Honda CBR 300R</span></h1> 
                   <p><span style="color: #E0E0E0;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</span></p>
                   <button type="button" class="btn btn-danger fw-bold text-uppercase" style="width:168px; height: 44px;" >Purchase</button>
@@ -32,7 +32,7 @@
     </header>
     <main>
          <!-- Fetured Bikes section -->
-        <section>
+        <section class="container">
             <div class="py-5">
                 <h1 class="fw-bold text-uppercase d-flex justify-content-center">Fetured Bikes 2021</h1>
                 <p class="fw-bold text-uppercase d-flex justify-content-center"><span style="color: #E76F51;">Best bike collection</span></p>
@@ -56,12 +56,12 @@
             </div>
         </section>
         <!-- latest News section-->
-        <section>
+        <section class="container">
             <div class="py-5">
                 <h1 class="fw-bold text-uppercase d-flex justify-content-center">latest News</h1>
             </div>
             <div>
-                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="row row-cols-1 row-cols-md-3 g-4" style="padding: 90px;">
                     <div class="col">
                         <div class="card h-100 p-3 rounded-3 border-0 shadow">
                             <img src="images/bike-1.png" class="card-img-top rounded-3"
@@ -105,12 +105,12 @@
             </div>
         </section>
         <!-- Clients section  -->
-        <section>
+        <section class="container">
             <div>
                 <h1 class="fw-bold text-uppercase  d-flex justify-content-center py-5"> Happy <span style="color: #E76F51;"> Clients says</span></h1>
             </div>  
             <div>
-                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="row row-cols-1 row-cols-md-3 g-4"style="padding: 90px;">
                     <div class="col">
                       <div class="card" style="width: 323px; height: 478px;">
                         <div class="d-flex justify-content-center pt-5">
@@ -196,44 +196,67 @@
             </div>
         </section>
         <!-- Frequently Asked section  -->
-        <section>
+        <section class="container">
             <div>
-              <h1 class="fw-bold text-uppercase  d-flex justify-content-center py-5"> Frequently Asked  <span style="color: #E76F51;"> Questions</span></h1>
+              <h1 class="fw-bold text-uppercase  d-flex justify-content-center py-5"> Frequently Asked  <span style="color: #E76F51;" > Questions</span></h1>
           </div>
           <div  class="container py-5">
             <div class="row">
               <div class="col-12 col-lg-6 my-3">
                 <img src="images/faq.png" class="img-fluid" style="width: 431px; height: 423px;" alt="">
               </div>
-              <div class="col-lg-6 col-12  order-lg-0 order-1">
-                <div
-                    class="p-2 bg-light border my-3 d-lg-flex justify-content-lg-aroundborder border-info  text-center text-lg-start lh-lg"  style="width: 552px; height: 203px;">
-                    <div>
-                        <h4>What are the most important things I should
-                          know about riding a bike?</h4>
-                        <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+              <div class="col-12 col-lg-6 my-3 accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      What are the most important things I should
+                      know about riding a bike?
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. 
                     </div>
+                  </div>
                 </div>
-                <div
-                    class="p-2 bg-light border my-3 d-lg-flex justify-content-lg-aroundborder border-info text-center text-lg-start"  style="width: 552px; height: 92px;">
-                    <div>
-                        <h4>How can I tell if my helmet is old and I need a 
-                          new one?</h4>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      How can I tell if my helmet is old and I need a 
+                      new one?
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
+                  </div>
                 </div>
-                <div
-                    class="p-2 bg-light border my-3 d-lg-flex justify-content-lg-around border border-info text-center text-lg-start" style="width: 552px; height: 76px;">
-                    <div>
-                        <h4>My bike has been in storage is it safe to ride?</h4>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      My bike has been in storage is it safe to ride?
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
+                  </div>
                 </div>
-                <div
-                    class="p-2 bg-light border my-3 d-lg-flex justify-content-lg-around border border-info text-center text-lg-start" style="width: 552px; height: 76px;">
-                    <div>
-                        <h4>What rules should I follow when riding my bike?</h4>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      What rules should I follow when riding my bike?
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
+                  </div>
                 </div>
-            </div>
+              </div>
             </div>
           </div>
         </section>
